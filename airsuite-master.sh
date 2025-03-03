@@ -730,10 +730,10 @@ capture_handshake() {
 
 # Main script logic
 main() {
+    setup_directories
     show_banner
     check_root
     check_dependencies
-    setup_directories
     get_interfaces
     kill_processes
     enable_monitor_mode
